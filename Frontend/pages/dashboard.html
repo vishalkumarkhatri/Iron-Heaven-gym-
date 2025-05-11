@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gym Dashboard</title>
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <div class="nav-links">
+            <a href="#workouts">Workouts</a>
+            <a href="#trainers">Trainers</a>
+            <a href="#membership">Membership</a>
+        </div>
+        <div class="profile-menu" id="profileMenu">
+            <button class="profile-btn">Profile ⮟</button>
+            <div class="dropdown" id="profileDropdown">
+                <a href="./profile.html">Your Profile</a>
+                <a href="../index.html" id="logoutBtn">Logout</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sections -->
+    <section id="workouts">
+        <h2>Workout Plans</h2>
+        <ul>
+            <!-- Workout plan
+            Monday - Chest Day
+            Tuesday - biceps
+            Wednesday-Back
+            Thursday- Tricep
+            Friday -Shoulders 
+            Saturday-Legs
+            Sunday- Rest Day -->
+            <li>Monday - Chest Day</li>
+            <li>Tuesday - biceps</li>
+            <li>Wednesday-Back</li>
+            <li>Thursday- Tricep</li>
+            <li>Friday -Shoulders</li>
+            <li>Saturday-Legs</li>
+            <li>Sunday- Rest Day</li>
+        </ul>
+    </section>
+
+    <section id="trainers">
+        <h2>Our Trainers</h2>
+        <ul>
+            <li>Vishal Khatri - Strength Specialist</li>
+            <li>Shreekant Mahto - HIIT & Cardio</li>
+            <li>Abhay Kumar - Functional Mobility</li>
+            <li>Manoj Kumar - Bodybuilding</li>
+            <li>Deepak Kumar - Yoga Trainer</li>
+
+        </ul>
+    </section>
+
+    <section id="membership">
+        <h2>Membership Details</h2>
+        <p>Status: <strong>Active</strong></p>
+        <p>Expires on: <strong>31st July 2025</strong></p>
+        <button>Renew Membership</button>
+    </section>
+
+    <section id="profile">
+        <h2>Your Profile</h2>
+        <form>
+            <input type="text" value="" placeholder="Your Name" id="profileName">
+            <input type="email" value="" placeholder="Email" id="profileEmail">
+            <input type="text" value="" placeholder="Occupation" id="profileOccupation">
+            <input type="text" value="" placeholder="Country" id="profileCountry">
+        </form>
+    </section>
+
+</body>
+<script src="../script/dashboard.js" defer>
+    // const isLoggedIn = localStorage.getItem("isLoggedIn");
+
+    // if (!isLoggedIn || isLoggedIn !== "true") {
+    //     // 🚫 Not logged in? Redirect them!
+    //     window.location.href = "./login.html";
+    // }
+</script>
+
+</html>

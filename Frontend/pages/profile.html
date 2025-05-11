@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Profile</title>
+    <link rel="stylesheet" href="../css/profile.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Your Profile</h1>
+        <div class="profile-card">
+
+            <form id="profileForm">
+                <label>
+                    Name:
+                    <input type="text" id="name" />
+                </label>
+                <label>
+                    Email:
+                    <input type="email" id="email" disabled />
+                </label>
+                <label>
+                    Password:
+                    <input type="password" id="password" />
+                </label>
+                <!-- <label>
+                    Phone:
+                    <input type="text" id="phone" />
+                </label>
+                <label>
+                    Age:
+                    <input type="number" id="age" />
+                </label>
+                <label>
+                    Address:
+                    <input type="text" id="address" />
+                </label> -->
+
+                <!-- Toast Container -->
+                <div id="toast"></div>
+                <button type="submit">Update Profile</button>
+            </form>
+        </div>
+        <button id="backBtn">← Back to Dashboard</button>
+    </div>
+
+    <script src="../script/profile.js"></script>
+</body>
+
+</html>
