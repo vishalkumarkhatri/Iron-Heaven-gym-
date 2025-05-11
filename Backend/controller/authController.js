@@ -77,31 +77,4 @@ const updateUser = (req, res) => {
     );
 };
 
-// const sql = `
-//     UPDATE users 
-//     SET name = ?, phone = ?, age = ?, address = ?
-//     WHERE id = ?
-//   `;
-
-//   db.query(sql, [name, phone, age, address, userId], (err, result) => {
-//     if (err) {
-//       console.error("Error updating profile:", err);
-//       return res.status(500).json({ success: false, message: "Database error", error: err });
-//     }
-
-//     if (result.affectedRows === 0) {
-//       return res.status(404).json({ success: false, message: "User not found" });
-//     }
-
-//     res.json({ success: true, message: "Profile updated successfully" });
-//   });
-// });
-
-
-
-
-
-
-
-
 module.exports = { registerUser, loginUser, updateUser };
